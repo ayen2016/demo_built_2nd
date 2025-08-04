@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brightemy</title>
+    <link rel="stylesheet" href="meet_the_team.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+    
+
+<!-- Topbar start -->
+
+
+
+<div class="topbar">
+
+    <div class="topbar_text">
+
+        <div> <div class="topbar_course"> <p> Course</p> </div>  </div>
+
+        <div> <div class="topbar_blog"> <p> Blog</p> </div>  </div>
+
+        <div> <div class="topbar_Meet_the_team" > <p> Meet The Team</p> </div>  </div>
+        
+
+    </div>
+</div>
+
+<!-- Topbar stop -->
+
+
+<!-- Navbar start -->
+
+
+
+<nav class="navbar">
+    <div class="logo">Brightemy
+      <!-- <img src="img/Brightemy-logo-350-by-123-pix (1).png" alt="Brightemy Logo" /> -->
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="course.html">Course</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+
+<!-- Navbar script finish -->
+
+
+
+
+<!-- Meet the team page hero section  start-->
+
+
+<div class="meet_the_team_page_hero_section">
+
+<div class="meet_the_team_page_title">
+
+    <p>Meet Brightemy Team</p>
+
+</div>
+
+</div>
+
+<!-- course page hero section  stop-->
+
+
+
+
+<section class="team-section">
+  <div class="container">
+    <h2 class="section-title">Meet Our Team</h2>
+    <div class="team-grid">
+      
+      <div class="team-member">
+        <img src="img/student1.jpg" alt="Alice Johnson" class="team-photo" />
+        <h3 class="team-name">Alice Johnson</h3>
+        <p class="team-role">Project Manager</p>
+        <p class="team-desc">Alice ensures our projects run smoothly and on time.</p>
+      </div>
+
+      <div class="team-member">
+        <img src="img/student2.jpg" alt="Mark Smith" class="team-photo" />
+        <h3 class="team-name">Mark Smith</h3>
+        <p class="team-role">Lead Developer</p>
+        <p class="team-desc">Mark writes the code that makes everything work.</p>
+      </div>
+
+      <div class="team-member">
+        <img src="img/student3.jpg" alt="Sara Lee" class="team-photo" />
+        <h3 class="team-name">Sara Lee</h3>
+        <p class="team-role">UI/UX Designer</p>
+        <p class="team-desc">Sara creates beautiful and user-friendly designs.</p>
+      </div>
+
+      <div class="team-member">
+        <img src="img/student4.jpg" alt="David Kim" class="team-photo" />
+        <h3 class="team-name">David Kim</h3>
+        <p class="team-role">Marketing Specialist</p>
+        <p class="team-desc">David builds our brand and reaches new audiences.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Scroll to top button start-->
+
+<button id="scrollTopBtn" title="Go to top">↑</button>
+
+<!-- Scroll to top button stop -->
+
+<!-- Javascript for Scroll to top button  -->
+
+<script>
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  };
+
+  scrollTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+<!-- Javascript for scroll to top button  -->
+
+
+<!-- Footer Section Start -->
+
+<div class="footer_portion">
+
+<div class="footer_left">
+
+  <div class="footer_logo"></div>
+
+  <div class="footer_left_text">
+
+    <p> Brightemy a place of secure and Bright Future. Operating since 2025 in Bangladesh and globally.</p>
+  
+  </div>
+
+  <div class="footer_socials">
+
+    <i class="fa-brands fa-facebook"></i>
+
+    <i class="fa-brands fa-square-instagram"></i>
+
+    <i class="fa-brands fa-square-linkedin"></i>
+
+
+  </div>
+</div>
+
+<div class="footer_middle">
+<div class="footer_middle_top_title"><H2>USEFUL LINKS</H2></div>
+<div><P>Home</P></div>
+<div><P>About</P></div>
+<div><P>Contact</P></div>
+<div><P>Blog</P></div>
+<div><P>Course</P></div>
+
+</div>
+
+
+<div class="footer_right">
+
+<div class="footer_right_top_title"><H2>LEGAL</H2></div>
+<div><P>Privacy Policy</P></div>
+<div><P>Terms & Service</P></div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer_copyright">
+  <p>&copy; 2025 Brightemy. All rights reserved.</p>
+</div>
+
+<!-- Footer Section stop -->
+
+</body>
+</html>

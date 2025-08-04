@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brightemy</title>
+    <link rel="stylesheet" href="course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+    
+
+<!-- Topbar start -->
+
+
+
+<div class="topbar">
+
+    <div class="topbar_text">
+
+        <div> <div class="topbar_course"> <p> Course</p> </div>  </div>
+
+        <div> <div class="topbar_blog"> <p> Blog</p> </div>  </div>
+
+        <div> <div class="topbar_Meet_the_team" > <p>  <a href="meet_the_team.html"> Meet The Team </a> </p> </div>  </div>
+        
+
+    </div>
+</div>
+
+<!-- Topbar stop -->
+
+
+<!-- Navbar start -->
+
+
+
+<nav class="navbar">
+    <div class="logo">Brightemy
+      <!-- <img src="img/Brightemy-logo-350-by-123-pix (1).png" alt="Brightemy Logo" /> -->
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="course.html">Course</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+
+<!-- Navbar script finish -->
+
+
+<!-- course page hero section  start-->
+
+
+<div class="course_page_hero_section">
+
+<div class="course_page_title">
+
+    <p>Brightemy Course</p>
+
+</div>
+
+</div>
+
+<!-- course page hero section  stop-->
+
+
+<!-- About the course section start -->
+
+<div class="about_the_course">
+
+
+<div class="about_the_course_left_container">
+
+
+  <div class="about_the_course_left_container_header_text">
+
+    <h2>About the Course</h2>
+
+    <h3>AT BRIGHTEMY, WE BELIEVE IN LEARNING BY DOING</h3>
+
+    <P>Our programme is not just about acquiring knowledge; it's about applying it in real-world scenarios. Our structured model ensures a well-rounded development, preparing you for various roles in the IT sector.</P>
+
+  </div>
+
+  <div class="about_page_left_container_point">
+
+   <div class="onboarding_snd_1st">
+
+   <div>
+   <img src="img/Course Page Star Icon.png" alt="Please" >
+   </div>
+
+  <div>
+
+  <h3> Point One</h3>
+  <p>Collaborate, share ideas, and grow your network while mastering career-boosting skills from anywhere in the world.</p>
+
+  </div>
+
+  </div>
+
+
+  <div class="onboarding_snd_2nd">
+
+  <div>
+  <img src="img/Course Page Star Icon.png" alt="Please" >
+  </div>
+
+  <div>
+
+  <h3>Point Two</h3>
+  <p>Gain insights from international instructors and interact with professionals from diverse industries and cultures.</p>
+
+ </div>
+
+  </div>
+
+</div>
+
+
+  <div class="about_the_course_buttom_line">
+
+    <p>Get the Brightemy course to learn by doing. Our hands-on program goes beyond theory, giving you real-world experience and practical skills that prepare you for success in diverse IT roles. Join us to build the expertise employers are looking for and kickstart your tech career with confidence.</p>
+
+  </div>
+
+
+</div>
+
+
+
+<div class="about_the_course_right_container">
+
+
+  <div class="about_the_course_right_container_inner">
+
+
+    <div class="course_description_heading">
+
+      <h2>Brightemy</h2>
+      
+    </div>
+
+    <div class="course_description_inner_logo">
+
+      <div class="course_description_inner_logo_img">
+
+        <p>Starts From</p>
+        <h2> £100</h2>
+        <p>PER MONTH</p>
+
+      </div>
+
+
+  </div>
+
+  <div class="course_info">
+
+
+    <p>
+
+      12 month programme <br> 
+      Real-life work development <br>
+      Hybrid Structure (Online & Office)<br> 
+      Structured learning covering all aspects <br>
+      Provides foundations to enter the IT Industry <br>
+      Onboarding session explaining all about the course<br>
+      Learn interview techniques <br>
+      After course completion you have the option to register as a Brightemy Global member and utilise the jobs platform
+
+
+    </p>
+
+  </div>
+
+  <div class="course_register_button">
+
+    <button class="course_register_btn">Register</button>
+
+
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- About the course section stop -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Scroll to top button start-->
+
+<button id="scrollTopBtn" title="Go to top">↑</button>
+
+<!-- Scroll to top button stop -->
+
+<!-- Javascript for Scroll to top button  -->
+
+<script>
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  };
+
+  scrollTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+<!-- Javascript for scroll to top button  -->
+
+
+<!-- Footer Section Start -->
+
+<div class="footer_portion">
+
+<div class="footer_left">
+
+  <div class="footer_logo"></div>
+
+  <div class="footer_left_text">
+
+    <p> Brightemy a place of secure and Bright Future. Operating since 2025 in Bangladesh and globally.</p>
+  
+  </div>
+
+  <div class="footer_socials">
+
+    <i class="fa-brands fa-facebook"></i>
+
+    <i class="fa-brands fa-square-instagram"></i>
+
+    <i class="fa-brands fa-square-linkedin"></i>
+
+
+  </div>
+</div>
+
+<div class="footer_middle">
+<div class="footer_middle_top_title"><H2>USEFUL LINKS</H2></div>
+<div><P>Home</P></div>
+<div><P>About</P></div>
+<div><P>Contact</P></div>
+<div><P>Blog</P></div>
+<div><P>Course</P></div>
+
+</div>
+
+
+<div class="footer_right">
+
+<div class="footer_right_top_title"><H2>LEGAL</H2></div>
+<div><P>Privacy Policy</P></div>
+<div><P>Terms & Service</P></div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer_copyright">
+  <p>&copy; 2025 Brightemy. All rights reserved.</p>
+</div>
+
+
+<!-- Footer Section stop -->
+
+
+
+
+
+</body>
+</html>
+
