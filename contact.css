@@ -39,6 +39,23 @@
 }
 
 
+
+.topbar_text a {
+
+  text-decoration: none;
+  color:#EFD800
+
+}
+
+.topbar_text a:hover { 
+
+  color:#000000;
+
+}
+
+
+
+
 .topbar_course:hover {
 
     color: #000000;
@@ -445,6 +462,7 @@
 .footer_copyright p {
   margin: 0;
 }
+
 
 
 
