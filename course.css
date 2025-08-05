@@ -39,22 +39,6 @@
 }
 
 
-
-.topbar_text a {
-
-  text-decoration: none;
-  color:#EFD800
-
-}
-
-.topbar_text a:hover { 
-
-  color:#000000;
-
-}
-
-
-
 .topbar_course:hover {
 
     color: #000000;
@@ -105,7 +89,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #EFD800;
+      background-color: #ffffff;
       padding: 0 20px;
       height: 80px;
       color: rgb(0, 0, 0);
@@ -118,11 +102,17 @@
       font-weight: bold;
     }
 
-    .logo img {
-      width: 205px;
-      height: 187px;
-      object-fit: contain;
+     .logo img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      height: 80px;
+      object-fit: cover;
+      overflow: hidden;
     }
+
 
     .nav-links {
       display: flex;
@@ -197,251 +187,213 @@
 /* <!-- Navbar to hamburger stop--> */
 
 
-
-.course_page_hero_section{
-
-    width: 100%;
-    height: 200px;
-    background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-     color:#EFD800;
-    font-size: 50px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    font-weight: bold;
-
-    
+/* Global Base Styles */
+/* Global Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Arimo", sans-serif;
+  background-color: #ffffff;
+  color: #1c1c1c;
+  line-height: 1.6;
+}
+
+/* ---------- Course Page Hero Section ---------- */
+.course_page_hero_section {
+  width: 100%;
+  height: 220px;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: bold;
+  border-bottom: 5px solid #efd800;
+}
 
 @media (max-width: 1110px) {
-
-
-.course_page_hero_section{
-
-     font-size: 25px;
-
+  .course_page_hero_section {
+    font-size: 25px;
+  }
 }
 
-}
-
-
+/* ---------- About The Course Section ---------- */
 .about_the_course {
-
   width: 100%;
-  height: 700px;
-  background-color: #EFD800;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 3rem 1.5rem;
+  background-color: #fafafa;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
-
+  align-items: center; /* Vertically center left and right containers */
 }
 
-
+/* Left and Right containers */
 .about_the_course_left_container {
-
-  width: 50%;
-  height: 700px;
+  flex: 1 1 420px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
-
+  gap: 1.5rem;
 }
-
-.about_the_course_left_container_header_text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-}
-
-.about_the_course_left_container_header_text h2 {
-  font-size: 45px;
-}
-
-.about_the_course_left_container_header_text p{
-  font-size: 20px;
-
-}
-
-
-.about_page_left_container_point {
-
-
-  width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-}
-
-
-.onboarding_snd_1st{
-
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10px;
-  font-size: 20px;
-
-}
-
-.onboarding_snd_1st img {
-
- width: 62px;
- height:62px;
- object-fit: cover;
- background-color: #EFD800;
- border-radius: 50%;
-
-}
-
-
-
-.onboarding_snd_2nd{
-
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10px;
-  font-size: 20px;
-
-}
-
-.onboarding_snd_2nd img {
-
- width: 62px;
- height:62px;
- object-fit: cover;
- background-color: #EFD800;
- border-radius: 50%;
-
-}
-
-.about_the_course_buttom_line p{
-
-  font-size: 20px;
-
-}
-
-
 
 .about_the_course_right_container {
+  flex: 1 1 420px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: right; /* aligns content horizontally to the right */
+  align-items: flex-end;  /* aligns items vertically to the right */
+  gap: 1.5rem;
+}
 
+/* Left container header */
+.about_the_course_left_container_header_text h2 {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.about_the_course_left_container_header_text p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 100%;
+}
+
+/* Points container */
+.about_page_left_container_point {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: flex-start; /* Left align points */
+  padding-left: 0.5rem;
+}
+
+/* Each point row */
+.onboarding_snd_1st,
+.onboarding_snd_2nd {
+  display: flex;
+  align-items: center; /* Vertically center icon and text */
+  gap: 1rem;
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 480px;
+}
+
+/* Point icons */
+.onboarding_snd_1st img,
+.onboarding_snd_2nd img {
+  flex-shrink: 0;
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+  background-color: #efd800;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(237, 216, 0, 0.3);
+}
+
+/* Right container inner box */
+.about_the_course_right_container_inner {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; 
+  gap: 1.5rem;
+  border-radius: 15px;
+  color: #1c1c1c;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+  /* Align right inside the container */
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Inner logo */
+.course_description_inner_logo {
+  width: 120px;
+  height: 120px;
+  background-color: #efd800;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  width:50%;
-  height: 700px;
-
-}
-
-
-
-.about_the_course_right_container_inner {
-
-
-  width: 80%;
-  height: 600px;
-  background-color: #000000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 10px;
-  border-radius: 10%;
-  color:#EFD800;
-
-}
-
-.course_description_inner_logo {
-
-    width: 120px;
-    height:120px;
-    background-color: #EFD800;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-
+  color: #000000;
 }
 
 .course_description_inner_logo_img {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-
-
-
 }
 
-.course_info{
-
+/* Course info text */
+.course_info {
   width: 90%;
   text-align: center;
   line-height: 1.5;
-  font-size: 18px;
-
+  font-size: 16px;
 }
 
-
-.course_register_btn
-
-{
-    width: 200px;
-    height: 50px;
-    color: #EFD800;
-    border: 2px solid #EFD800;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    /* margin-top: 10px; */
-    cursor: pointer;
-    background-color: #000000;
-    border-radius: 20px;
-
+/* Register button */
+.course_register_btn {
+  width: 200px;
+  height: 50px;
+  color: #efd800;
+  border: 2px solid #efd800;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.course_register_btn:hover {
+  background-color: #efd800;
+  color: #000000;
+}
 
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 900px) {
+  .about_the_course {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .about_the_course_left_container,
+  .about_the_course_right_container {
+    width: 100%;
+    max-width: none;
+    align-items: center;
+  }
 
+  .about_page_left_container_point {
+    align-items: center; /* Center points on mobile */
+    padding-left: 0;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
+  .onboarding_snd_1st,
+  .onboarding_snd_2nd {
+    justify-content: center;
+    max-width: 100%;
+  }
+}
 
 
 
@@ -576,4 +528,3 @@
 .footer_copyright p {
   margin: 0;
 }
-
