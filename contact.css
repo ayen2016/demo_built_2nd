@@ -102,17 +102,11 @@
       font-weight: bold;
     }
 
-     .logo img {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: auto;
-      height: 80px;
-      object-fit: cover;
-      overflow: hidden;
+    .logo img {
+      width: 205px;
+      height: 187px;
+      object-fit: contain;
     }
-
 
     .nav-links {
       display: flex;
@@ -182,13 +176,23 @@
         top: 25px;
         right: 20px;
       }
+
+      .topbar{
+
+        display:none;
+
+      }
     }
+    
+
+/* <!-- Navbar to hamburger stop--> */
 
 /* <!-- Navbar to hamburger stop--> */
 
 
-/* Global Base Styles */
-/* Global Base Styles */
+
+/* contact page style start */
+
 * {
   margin: 0;
   padding: 0;
@@ -202,200 +206,216 @@ body {
   line-height: 1.6;
 }
 
-/* ---------- Course Page Hero Section ---------- */
-.course_page_hero_section {
+/* ---------- Hero Section ---------- */
+.contact_page_hero_section {
   width: 100%;
   height: 220px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #f8f8f8;
+  color: #000;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  font-size: clamp(1.75rem, 4vw, 3rem);
-  font-weight: bold;
-  border-bottom: 5px solid #efd800;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  border-bottom: 4px solid #efd800;
 }
 
-@media (max-width: 1110px) {
-  .course_page_hero_section {
-    font-size: 25px;
-  }
-}
-
-/* ---------- About The Course Section ---------- */
-.about_the_course {
-  width: 100%;
-  padding: 3rem 1.5rem;
-  background-color: #fafafa;
+/* ---------- Contact Section ---------- */
+.Contact_page_main_section {
   display: flex;
+  flex-direction: row;
+}
+
+/* ---------- Left (Form) Side ---------- */
+.contact_left_box {
+  display: flex;
+  width: 50%;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
-  align-items: center; /* Vertically center left and right containers */
-}
-
-/* Left and Right containers */
-.about_the_course_left_container {
-  flex: 1 1 420px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.about_the_course_right_container {
-  flex: 1 1 420px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: right; /* aligns content horizontally to the right */
-  align-items: flex-end;  /* aligns items vertically to the right */
-  gap: 1.5rem;
-}
-
-/* Left container header */
-.about_the_course_left_container_header_text h2 {
-  font-size: 2.5rem;
-  color: #000;
-}
-
-.about_the_course_left_container_header_text p {
-  font-size: 1.1rem;
-  color: #333;
-  max-width: 100%;
-}
-
-/* Points container */
-.about_page_left_container_point {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  padding: 4rem 2rem;
   justify-content: flex-start;
-  align-items: flex-start; /* Left align points */
-  padding-left: 0.5rem;
-}
-
-/* Each point row */
-.onboarding_snd_1st,
-.onboarding_snd_2nd {
-  display: flex;
-  align-items: center; /* Vertically center icon and text */
-  gap: 1rem;
-  font-size: 1.1rem;
-  color: #444;
-  max-width: 480px;
-}
-
-/* Point icons */
-.onboarding_snd_1st img,
-.onboarding_snd_2nd img {
-  flex-shrink: 0;
-  width: 62px;
-  height: 62px;
-  object-fit: cover;
-  background-color: #efd800;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(237, 216, 0, 0.3);
-}
-
-/* Right container inner box */
-.about_the_course_right_container_inner {
-  width: 100%;
-  max-width: 600px;
   background-color: #ffffff;
+}
+
+/* ---------- Right (Office Info) Side ---------- */
+.contact_right_box {
+  display: flex;
+  width: 50%;
+  padding: 4rem 2rem;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  align-items: stretch; /* Ensures children stretch vertically */
+}
+
+.contact_page_intro {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly; 
-  gap: 1.5rem;
-  border-radius: 15px;
+  flex: 1 1 100%;
+  height: 100%;
+}
+
+/* ---------- Office Locations Box ---------- */
+.office-locations {
+  width: 100%;
+  height: 100%;
+  flex: 1 1 100%;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: 'Arimo', sans-serif;
   color: #1c1c1c;
-  padding: 2rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  
-  /* Align right inside the container */
-  margin-left: auto;
-  margin-right: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-/* Inner logo */
-.course_description_inner_logo {
-  width: 120px;
-  height: 120px;
+.office h4 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: 600;
+  border-left: 4px solid #efd800;
+  padding-left: 10px;
+}
+
+.office p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.office a {
+  color: #007BFF;
+  text-decoration: none;
+  border-bottom: 1px dotted #007BFF;
+  transition: color 0.3s;
+}
+
+.office a:hover {
+  color: #0056b3;
+  border-bottom-color: #0056b3;
+}
+
+/* ---------- Contact Form ---------- */
+.contact-form {
+  flex: 1 1 500px;
+  padding: 2.5rem;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #1c1c1c;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #efd800;
+  box-shadow: 0 0 0 3px rgba(239, 216, 0, 0.2);
+  outline: none;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.submit-btn {
   background-color: #efd800;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #000000;
-}
-
-.course_description_inner_logo_img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-}
-
-/* Course info text */
-.course_info {
-  width: 90%;
-  text-align: center;
-  line-height: 1.5;
-  font-size: 16px;
-}
-
-/* Register button */
-.course_register_btn {
-  width: 200px;
-  height: 50px;
-  color: #efd800;
-  border: 2px solid #efd800;
-  border-radius: 20px;
-  font-size: 16px;
+  color: #000;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
   font-weight: bold;
+  font-size: 16px;
   cursor: pointer;
-  background-color: #000000;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.course_register_btn:hover {
-  background-color: #efd800;
-  color: #000000;
+.submit-btn:hover {
+  background-color: #e0c900;
 }
 
-/* ---------- Responsive Adjustments ---------- */
-@media (max-width: 900px) {
-  .about_the_course {
+/* ---------- Image Credit (Optional) ---------- */
+.image-credit {
+  flex: 1 1 300px;
+  font-size: 14px;
+  color: #888;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1rem;
+  text-align: right;
+}
+
+.image-credit a {
+  color: #555;
+  text-decoration: none;
+  border-bottom: 1px solid #999;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 1110px) {
+  .Contact_page_main_section {
     flex-direction: column;
-    text-align: center;
   }
 
-  .about_the_course_left_container,
-  .about_the_course_right_container {
+  .contact_left_box,
+  .contact_right_box {
+    flex-direction: column;
     width: 100%;
-    max-width: none;
-    align-items: center;
   }
 
-  .about_page_left_container_point {
-    align-items: center; /* Center points on mobile */
-    padding-left: 0;
-  }
-
-  .onboarding_snd_1st,
-  .onboarding_snd_2nd {
+  .image-credit {
     justify-content: center;
-    max-width: 100%;
+    text-align: center;
+    margin-top: 1rem;
   }
 }
 
-
+/* contact page style stop */
 
 
 /* <!-- Scroll to top button start--> */
@@ -423,12 +443,8 @@ body {
 }
 
 
+
 /* <!-- Scroll to top button start--> */
-
-
-
-
-
 
 /* footer section start */
 /* ========== Footer Main Section ========== */
@@ -528,3 +544,7 @@ body {
 .footer_copyright p {
   margin: 0;
 }
+
+
+
+/* footer section stop */
