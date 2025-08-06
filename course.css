@@ -182,6 +182,32 @@
         top: 25px;
         right: 20px;
       }
+
+
+      
+      /* 👇 Center logo on mobile */
+     .navbar {
+               flex-direction: column;
+                 justify-content: center;
+                align-items: center;
+            }
+
+       .logo {
+            order: -1;
+               display: flex;
+               justify-content: center;
+         /* align-items: center; */
+            width: 100%;
+              /* padding: 10px 0; */
+            }
+
+          .nav-links {
+               justify-content: center;
+               }
+
+      /* 👇 Center logo on mobile */
+
+
     }
 
 /* <!-- Navbar to hamburger stop--> */
@@ -323,8 +349,8 @@ body {
 
 /* Inner logo */
 .course_description_inner_logo {
-  width: 120px;
-  height: 120px;
+  width: 135px;
+  height: 135px;
   background-color: #efd800;
   border-radius: 50%;
   display: flex;
@@ -356,7 +382,7 @@ body {
   height: 50px;
   color: #efd800;
   border: 2px solid #efd800;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -364,10 +390,10 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.course_register_btn:hover {
+/* .course_register_btn:hover {
   background-color: #efd800;
   color: #000000;
-}
+} */
 
 /* ---------- Responsive Adjustments ---------- */
 @media (max-width: 900px) {
